@@ -1,0 +1,303 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* * {
+  overflow: visible 
+} */
+
+
+/* html,
+body {
+  height: 100%;
+  overflow: auto !important;;
+} */
+
+
+/* Cookie banner */
+.cookie-banner-custom-mainwrapper {
+  position: relative;
+  background-color: white;
+  width: 100% !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.cookie-banner-custom {
+  position: absolute;
+  bottom: 20px !important;
+  width: 90% !important;
+  left: 5% !important;
+  right: 5% !important;
+  background-color: white !important;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .cookie-banner-custom {
+    width: 90% !important;
+    left: 5% !important;
+    right: 5% !important;
+  }
+
+  .rcc-decline-button {
+    width: 50% !important;
+  }
+
+}
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+  transition: background-color 0s 600000s, color 0s 600000s !important;
+}
+
+
+
+/* styles.css */
+.no-border-every-3n:nth-child(3n) {
+  border: none;
+}
+
+
+.highlighted-link {
+  color: #b677f1;
+  /* Link color */
+  text-decoration: none;
+  /* Underline style */
+  font-weight: 500;
+}
+
+
+.dumyCardColor {
+  background: radial-gradient(126.19% 250.84% at 91.98% 17.84%, #8725C6 0%, #F4B95B 54.51%, #B94FA9 100%) ;
+}
+
+
+
+
+
+
+/* Custom scrollbar for WebKit browsers (Chrome, Safari, etc.) */
+
+/* Apply custom scrollbar for screens smaller than 640px (sm screen) */
+@media (min-width: 640px) {
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 5px !important;
+    /* Width of the scrollbar */
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+    /* Background of the scrollbar track */
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #8c8c8c;
+    /* Scrollbar color */
+    border-radius: 10px;
+    border: 3px solid transparent;
+    /* Adds padding inside the thumb */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #696969;
+    /* Scrollbar thumb on hover */
+  }
+
+  /* Scrollbar corner for both horizontal and vertical scrollbars */
+  ::-webkit-scrollbar-corner {
+    background-color: #f1f1f1;
+    /* Corner between scrollbars (on overflow) */
+  }
+  
+}
+
+
+.infoScroll {
+  padding-right: 5px;
+  /* Adds space between the content and the scrollbar */
+}
+
+/* Apply custom scrollbar for screens smaller than 640px (sm screen) */
+
+.infoScroll::-webkit-scrollbar {
+  width: 12px;
+  /* Width of the scrollbar */
+}
+
+.infoScroll::-webkit-scrollbar-track {
+  background: white;
+  border: 1px solid #B8B8B8;
+  border-radius: 0;
+  padding: 1px;
+  /* Adds space between the border and scrollbar */
+}
+
+.infoScroll::-webkit-scrollbar-thumb {
+  background-color: #EBEBEB;
+  border-radius: 0;
+  padding: 1px;
+  border: 1px solid transparent;
+  /* Creates spacing between scrollbar thumb and the track */
+}
+
+.infoScroll::-webkit-scrollbar-thumb:hover {
+  background-color: #adacac;
+}
+
+.infoScroll::-webkit-scrollbar-corner {
+  background-color: #f1f1f1;
+}
+
+
+
+
+
+
+/*//////////////////////////////////////////// style the blog ///////////////////////////////////////////////*/
+.blog-content {
+  /* padding: 20px; */
+  line-height: 1.6;
+
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Style for paragraphs */
+.blog-content p {
+  /* margin-bottom: 1em; */
+  font-size: 16px;
+  color: #555;
+}
+
+/* Style for headings (h1, h2, h3, etc.) */
+.blog-content h1,
+.blog-content h2,
+.blog-content h3,
+.blog-content h4,
+.blog-content h5 {
+  font-weight: bold;
+  /* margin: 20px 0 10px; */
+  color: #222;
+}
+
+.blog-content h2 {
+  font-size: 24px;
+}
+
+.blog-content h3 {
+  font-size: 20px;
+}
+
+/* Style for ordered lists */
+.blog-content ol {
+  list-style: decimal;
+  margin-left: 28px;
+  /* margin-bottom: 1em; */
+}
+
+/* Style for unordered lists */
+.blog-content ul {
+  list-style: disc;
+  margin-left: 20px;
+  /* margin-bottom: 1em; */
+}
+
+/* Style for list items */
+.blog-content li {
+  margin-bottom: 5px;
+}
+
+/* Style for images */
+.blog-content img {
+  max-width: 100%;
+  height: auto;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+/* Style for videos */
+.blog-content video {
+  max-width: 100%;
+  margin: 10px 0;
+  border-radius: 8px;
+}
+
+/* Style for blockquotes */
+.blog-content blockquote {
+  border-left: 4px solid #ccc;
+  /* padding-left: 20px; */
+  color: #666;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+
+
+/* hide page overflow */
+.modal-open {
+  overflow-y: hidden;
+}
+
+
+
+
+.loader {
+  border-color: #fff;
+  border-top-color: #3498db;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+/*/////////////////////////////// reactions ////////////////////////////*/
+
+/* Reaction animations */
+.reaction-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 10px;
+}
+
+.reaction-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.reaction-btn:hover {
+  transform: scale(1.5);
+}
+
+.floating-reaction {
+  position: fixed;
+  font-size: 2rem;
+  pointer-events: none;
+  z-index: 1000;
+  animation: floatUp 3s forwards;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) scale(0.5);
+    opacity: 0;
+  }
+}
